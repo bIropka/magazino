@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Magazino - интернет-магазин за 14 дней</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/custom-styles.css">
 </head>
-<body>
+<body vlink="0000ff">
 
 <div class="header">
 
     <div class="content-block">
 
         <div class="header-logo"></div>
+
+        <div class="vertical-line"></div>
 
         <div class="promo-text">
             <div class="text">Мы создаем прибыльные интернет-магазины всего за 14 дней по цене бюджетного ноутбука!</div>
@@ -25,66 +29,87 @@
             <a href="#">Изменить</a>
         </div>
 
+        <div class="clearfix"></div>
+
         <button class="get-callback">ОБРАТНЫЙ ЗВОНОК</button>
 
     </div>
 
 </div>
 
-<div class="block-timer">
+<div class="block-first">
 
-    <div class="title">Интернет-магазин по цене <div class="underlined">ноутбука!<div class="decor-line"></div></div></div>
+    <div class="content-block">
 
-    <div class="text">Закажите сегодня, а через две недели получайте прибыль!
-        Мы гарантируем поток новых клиентов всего через 14 дней после запуска!</div>
+        <div class="block-text">
+            <h1 class="title">Интернет-магазин<br>по цене <span class="underlined">ноутбука!<span class="decor-line"></span></span></h1>
 
-    <div class="timer"></div>
+            <div class="text">Закажите сегодня, а через две недели<br>
+                получайте прибыль! Мы гарантируем<br>
+                поток новых клиентов всего через 14<br>
+                дней после запуска!</div>
+        </div>
+
+
+        <div class="block-timer">
+            <div class="title">до первой прибыли:</div>
+            <div class="timer"></div>
+            <button class="to-run">запустить</button>
+        </div>
+
+        <div class="clearfix"></div>
+
+    </div>
 
 </div>
 
 <div class="block-for-whom">
 
-    <div class="title">Для кого наше предложение?</div>
+    <div class="content-block">
 
-    <div class="smooth-line"></div>
+        <h2 class="title">Для кого наше предложение?</h2>
 
-    <div class="text">
-        <p>Наш тариф просто подарок для частных предпринимателей!</p>
-        <p>Для тех, кому нужен недорогой, но качественные сайт
-            быстро и недорого</p>!</div>
+        <div class="smooth-line"></div>
 
-    <div class="small-text">
-        С другой стороны дальнейшее развитие различных форм деятельности обеспечивает
-        широкому кругу (специалистов) участие в формировании соответствующий условий
-        активизации. Таким образом начало повседневной работы по формированию позиции
-        в значительной степени обуславливает создание позиций, занимаемых участниками в
-        отношении поставленных задач. Не следует, однако забывать, что рамки и место
+        <h3 class="text">
+            Наш тариф просто подарок для частных предпринимателей!<br>
+            Для тех, кому нужен недорогой, но качественные сайт
+                быстро и недорого!</h3>
+
+        <div class="small-text">
+            С другой стороны дальнейшее развитие различных форм деятельности обеспечивает
+            широкому кругу (специалистов) участие в формировании соответствующий условий
+            активизации. Таким образом начало повседневной работы по формированию позиции
+            в значительной степени обуславливает создание позиций, занимаемых участниками в
+            отношении поставленных задач. Не следует, однако забывать, что рамки и место
+        </div>
+
+        <ul class="social-links">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-vk"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+
+        <form class="form-order" action="#">
+            <div class="text">Интернтет-магазин</div>
+            <div class="small-text">всего за 14 дней!</div>
+            <label><input type="text" placeholder=""></label>
+            <label><input type="text" placeholder=""></label>
+            <label><input type="text" placeholder=""></label>
+            <label><input type="text" value="ОТПРАВИТЬ"></label>
+            <i class="fa fa-lock"></i>
+            <div class="text">Ваши персональные данные под защитой</div>
+            <a href="http://zakon0.rada.gov.ua/laws/show/2297-17">Закона Украины о персональных данных</a>
+        </form>
+
     </div>
-
-    <ul class="social-links">
-        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="#"><i class="fa fa-vk"></i></a></li>
-        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-    </ul>
-
-    <form class="form-order" action="#">
-        <div class="text">Интернтет-магазин</div>
-        <div class="small-text">всего за 14 дней!</div>
-        <label><input type="text" placeholder=""></label>
-        <label><input type="text" placeholder=""></label>
-        <label><input type="text" placeholder=""></label>
-        <label><input type="text" value="ОТПРАВИТЬ"></label>
-        <i class="fa fa-lock"></i>
-        <div class="text">Ваши персональные данные под защитой</div>
-        <a href="http://zakon0.rada.gov.ua/laws/show/2297-17">Закона Украины о персональных данных</a>
-    </form>
 
 </div>
 
 <div class="block-price">
 
-    <div class="sub-title">ГОТОВЫЙ ИНТЕРНЕТ - МАГАЗИН</div>
+    <h4 class="sub-title">ГОТОВЫЙ ИНТЕРНЕТ - МАГАЗИН</h4>
 
     <ul class="cost-value">
         <li>12800 грн</li>
@@ -116,9 +141,9 @@
 
 <div class="block-price-components">
 
-    <div class="sub-title">инструменты продаж</div>
+    <h4 class="sub-title">инструменты продаж</h4>
 
-    <div class="title">Что входит в стоимость?</div>
+    <h2 class="title">Что входит в стоимость?</h2>
 
     <div class="smooth-line"></div>
 
@@ -177,9 +202,9 @@
 
 <div class="block-site-control">
 
-    <div class="sub-title">управление сайтом</div>
+    <h4 class="sub-title">управление сайтом</h4>
 
-    <div class="title">Контроль в любой точке мира</div>
+    <h2 class="title">Контроль в любой точке мира</h2>
 
     <div class="smooth-line"></div>
 
@@ -237,82 +262,86 @@
 
 <div class="block-get-gift">
 
-    <div class="sub-title">сделайте заказ</div>
+    <div class="content-block">
 
-    <div class="title">Получите гарантированные подарки</div>
+        <h4 class="sub-title">сделайте заказ</h4>
 
-    <div class="wave-line"></div>
+        <h2 class="title">Получите гарантированные подарки</h2>
 
-    <ul>
-        <li>
-            <div class="icon-gift"></div>
-            <div class="smooth-line"></div>
-            <div class="text">Доменное имя и хостинг</div>
-            <div class="small-text">
-                С другой стороны дальнейшее развитие
-                различных форм деятельности
-                обеспечивает широкому кругу
-            </div>
-        </li>
-        <li>
-            <div class="icon-gift"></div>
-            <div class="smooth-line"></div>
-            <div class="text">Мобильная версия сайта</div>
-            <div class="small-text">
-                С другой стороны дальнейшее развитие
-                различных форм деятельности
-                обеспечивает широкому кругу
-            </div>
-        </li>
-        <li>
-            <div class="icon-gift"></div>
-            <div class="smooth-line"></div>
-            <div class="text">Первичное заполнение сайта</div>
-            <div class="small-text">
-                С другой стороны дальнейшее развитие
-                различных форм деятельности
-                обеспечивает широкому кругу
-            </div>
-        </li>
-        <li>
-            <div class="icon-gift"></div>
-            <div class="smooth-line"></div>
-            <div class="text">Регистрация в Гугл и Яндекс</div>
-            <div class="small-text">
-                С другой стороны дальнейшее развитие
-                различных форм деятельности
-                обеспечивает широкому кругу
-            </div>
-        </li>
-        <li>
-            <div class="icon-gift"></div>
-            <div class="smooth-line"></div>
-            <div class="text">Счетчик посещаемости сайта</div>
-            <div class="small-text">
-                С другой стороны дальнейшее развитие
-                различных форм деятельности
-                обеспечивает широкому кругу
-            </div>
-        </li>
-        <li>
-            <div class="icon-gift"></div>
-            <div class="smooth-line"></div>
-            <div class="text">100 дней техподдержки</div>
-            <div class="small-text">
-                С другой стороны дальнейшее развитие
-                различных форм деятельности
-                обеспечивает широкому кругу
-            </div>
-        </li>
-    </ul>
+        <div class="wave-line"></div>
+
+        <ul>
+            <li>
+                <div class="icon-gift"></div>
+                <div class="smooth-line"></div>
+                <h3 class="text">Доменное имя и хостинг</h3>
+                <div class="small-text">
+                    С другой стороны дальнейшее развитие
+                    различных форм деятельности
+                    обеспечивает широкому кругу
+                </div>
+            </li>
+            <li>
+                <div class="icon-gift"></div>
+                <div class="smooth-line"></div>
+                <h3 class="text">Мобильная версия сайта</h3>
+                <div class="small-text">
+                    С другой стороны дальнейшее развитие
+                    различных форм деятельности
+                    обеспечивает широкому кругу
+                </div>
+            </li>
+            <li>
+                <div class="icon-gift"></div>
+                <div class="smooth-line"></div>
+                <h3 class="text">Первичное заполнение сайта</h3>
+                <div class="small-text">
+                    С другой стороны дальнейшее развитие
+                    различных форм деятельности
+                    обеспечивает широкому кругу
+                </div>
+            </li>
+            <li>
+                <div class="icon-gift"></div>
+                <div class="smooth-line"></div>
+                <h3 class="text">Регистрация в Гугл и Яндекс</h3>
+                <div class="small-text">
+                    С другой стороны дальнейшее развитие
+                    различных форм деятельности
+                    обеспечивает широкому кругу
+                </div>
+            </li>
+            <li>
+                <div class="icon-gift"></div>
+                <div class="smooth-line"></div>
+                <h3 class="text">Счетчик посещаемости сайта</h3>
+                <div class="small-text">
+                    С другой стороны дальнейшее развитие
+                    различных форм деятельности
+                    обеспечивает широкому кругу
+                </div>
+            </li>
+            <li>
+                <div class="icon-gift"></div>
+                <div class="smooth-line"></div>
+                <h3 class="text">100 дней техподдержки</h3>
+                <div class="small-text">
+                    С другой стороны дальнейшее развитие
+                    различных форм деятельности
+                    обеспечивает широкому кругу
+                </div>
+            </li>
+        </ul>
+
+    </div>
 
 </div>
 
 <div class="block-make-order">
 
     <form class="form-order" action="#">
-        <div class="sub-title">Интернтет-магазин</div>
-        <div class="title">всего за 14 дней!</div>
+        <h4 class="sub-title">обратная связь</h4>
+        <h2 class="title">Предварительный заказ сайта</h2>
         <div class="wave-line"></div>
         <label><input type="text" placeholder=""></label>
         <label><input type="text" placeholder=""></label>
@@ -327,309 +356,329 @@
 
 <div class="block-alternatives">
 
-    <div class="sub-title">альтернативы</div>
+    <div class="content-block">
 
-    <div class="title">У вас есть выбор, но так ли он хорош?</div>
+        <h4 class="sub-title">альтернативы</h4>
 
-    <div class="wave-line"></div>
+        <h2 class="title">У вас есть выбор, но так ли он хорош?</h2>
 
-    <ul>
-        <li>
-            <div class="icon-alternatives"></div>
-            <div class="text">Заказать разработку в веб-студии</div>
-            <div class="smooth-line"></div>
-            <div class="small-text"></div>
-            <div class="icon-show-more"></div>
-        </li>
-        <li>
-            <div class="icon-alternatives"></div>
-            <div class="text">Заказать разработку у фрилансера</div>
-            <div class="smooth-line"></div>
-            <div class="small-text"></div>
-            <div class="icon-show-more"></div>
-        </li>
-        <li>
-            <div class="icon-alternatives"></div>
-            <div class="text">Сделать сайт самому в конструторе</div>
-            <div class="smooth-line"></div>
-            <div class="small-text"></div>
-            <div class="icon-show-more"></div>
-        </li>
-    </ul>
+        <div class="wave-line"></div>
+
+        <ul>
+            <li>
+                <div class="icon-alternatives"></div>
+                <h3 class="text">Заказать разработку в веб-студии</h3>
+                <div class="smooth-line"></div>
+                <div class="small-text"></div>
+                <div class="icon-show-more"></div>
+            </li>
+            <li>
+                <div class="icon-alternatives"></div>
+                <h3 class="text">Заказать разработку у фрилансера</h3>
+                <div class="smooth-line"></div>
+                <div class="small-text"></div>
+                <div class="icon-show-more"></div>
+            </li>
+            <li>
+                <div class="icon-alternatives"></div>
+                <h3 class="text">Сделать сайт самому в конструторе</h3>
+                <div class="smooth-line"></div>
+                <div class="small-text"></div>
+                <div class="icon-show-more"></div>
+            </li>
+        </ul>
+
+    </div>
 </div>
 
 <div class="block-steps">
 
-    <div class="sub-title">как заказать?</div>
+    <div class="content-block">
 
-    <div class="title">Всего шесть простых шагов</div>
+        <h4 class="sub-title">как заказать?</h4>
 
-    <div class="wave-line"></div>
+        <h2 class="title">Всего шесть простых шагов</h2>
 
-    <ul>
-        <li>
-            <div class="step-number">1</div>
-            <div class="wave-line"></div>
-            <div class="text">Оформление заявки</div>
-            <div class="small-text">
-                Год основания нашей компании на
-                территории Украины. Мы растем
-                вместе со своими клиентами!
-            </div>
-        </li>
-        <li>
-            <div class="step-number">2</div>
-            <div class="wave-line"></div>
-            <div class="text">Оформление заявки</div>
-            <div class="small-text">
-                Год основания нашей компании на
-                территории Украины. Мы растем
-                вместе со своими клиентами!
-            </div>
-        </li>
-        <li>
-            <div class="step-number">3</div>
-            <div class="wave-line"></div>
-            <div class="text">Оформление заявки</div>
-            <div class="small-text">
-                Год основания нашей компании на
-                территории Украины. Мы растем
-                вместе со своими клиентами!
-            </div>
-        </li>
-        <li>
-            <div class="step-number">4</div>
-            <div class="wave-line"></div>
-            <div class="text">Оформление заявки</div>
-            <div class="small-text">
-                Год основания нашей компании на
-                территории Украины. Мы растем
-                вместе со своими клиентами!
-            </div>
-        </li>
-        <li>
-            <div class="step-number">5</div>
-            <div class="wave-line"></div>
-            <div class="text">Оформление заявки</div>
-            <div class="small-text">
-                Год основания нашей компании на
-                территории Украины. Мы растем
-                вместе со своими клиентами!
-            </div>
-        </li>
-        <li>
-            <div class="step-number">6</div>
-            <div class="wave-line"></div>
-            <div class="text">Оформление заявки</div>
-             <div class="small-text">
-                Год основания нашей компании на
-                территории Украины. Мы растем
-                вместе со своими клиентами!
-            </div>
-        </li>
-    </ul>
+        <div class="wave-line"></div>
 
-    <button class="send-order">ОФОРМИТЬ ЗАЯВКУ</button>
+        <ul>
+            <li>
+                <div class="step-number">1</div>
+                <div class="wave-line"></div>
+                <h3 class="text">Оформление заявки</h3>
+                <div class="small-text">
+                    Год основания нашей компании на
+                    территории Украины. Мы растем
+                    вместе со своими клиентами!
+                </div>
+            </li>
+            <li>
+                <div class="step-number">2</div>
+                <div class="wave-line"></div>
+                <h3 class="text">Оформление заявки</h3>
+                <div class="small-text">
+                    Год основания нашей компании на
+                    территории Украины. Мы растем
+                    вместе со своими клиентами!
+                </div>
+            </li>
+            <li>
+                <div class="step-number">3</div>
+                <div class="wave-line"></div>
+                <h3 class="text">Оформление заявки</h3>
+                <div class="small-text">
+                    Год основания нашей компании на
+                    территории Украины. Мы растем
+                    вместе со своими клиентами!
+                </div>
+            </li>
+            <li>
+                <div class="step-number">4</div>
+                <div class="wave-line"></div>
+                <h3 class="text">Оформление заявки</h3>
+                <div class="small-text">
+                    Год основания нашей компании на
+                    территории Украины. Мы растем
+                    вместе со своими клиентами!
+                </div>
+            </li>
+            <li>
+                <div class="step-number">5</div>
+                <div class="wave-line"></div>
+                <h3 class="text">Оформление заявки</h3>
+                <div class="small-text">
+                    Год основания нашей компании на
+                    территории Украины. Мы растем
+                    вместе со своими клиентами!
+                </div>
+            </li>
+            <li>
+                <div class="step-number">6</div>
+                <div class="wave-line"></div>
+                <h3 class="text">Оформление заявки</h3>
+                <div class="small-text">
+                    Год основания нашей компании на
+                    территории Украины. Мы растем
+                    вместе со своими клиентами!
+                </div>
+            </li>
+        </ul>
+
+        <button class="send-order">ОФОРМИТЬ ЗАЯВКУ</button>
+
+    </div>
 
 </div>
 
 <div class="block-comments">
 
-    <div class="sub-title">отзывы</div>
+    <div class="content-block">
 
-    <div class="title">Что говорят о нас клиенты</div>
+        <h4 class="sub-title">отзывы</h4>
 
-    <div class="wave-line"></div>
+        <h2 class="title">Что говорят о нас клиенты</h2>
 
-    <ul class="slider">
-        <li class="slide">
-            <div class="client-name-link">
-                <div class="client-name text">Андрей Владимирович-1</div>
-                <a href="http://www.optzakupka.com.ua/">www.optzakupka.com.ua</a>
-            </div>
-            <div class="client-photo"></div>
-            <div class="comment-text small-text">
-                С другой стороны дальнейшее развитие различных форм деятельности обеспечивает широкому кругу
-                (специалистов) участие в формировании соответствующий условий активизации. Таким образом начало
-                повседневной работы по формированию позиции в значительной степени обуславливает создание позиций,
-                занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что рамки и место
-                обучения кадров представляет собой интересный эксперимент проверки существенных финансовых и
-                административных условий. Значимость этих проблем настолько очевидна.
-            </div>
-        </li>
-        <li class="slide">
-            <div class="client-name-link">
-                <div class="client-name text">Андрей Владимирович-2</div>
-                <a href="http://www.optzakupka.com.ua/">www.optzakupka.com.ua</a>
-            </div>
-            <div class="client-photo"></div>
-            <div class="comment-text small-text">
-                С другой стороны дальнейшее развитие различных форм деятельности обеспечивает широкому кругу
-                (специалистов) участие в формировании соответствующий условий активизации. Таким образом начало
-                повседневной работы по формированию позиции в значительной степени обуславливает создание позиций,
-                занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что рамки и место
-                обучения кадров представляет собой интересный эксперимент проверки существенных финансовых и
-                административных условий. Значимость этих проблем настолько очевидна.
-            </div>
-        </li>
-        <li class="slide">
-            <div class="client-name-link">
-                <div class="client-name text">Андрей Владимирович-3</div>
-                <a href="http://www.optzakupka.com.ua/">www.optzakupka.com.ua</a>
-            </div>
-            <div class="client-photo"></div>
-            <div class="comment-text small-text">
-                С другой стороны дальнейшее развитие различных форм деятельности обеспечивает широкому кругу
-                (специалистов) участие в формировании соответствующий условий активизации. Таким образом начало
-                повседневной работы по формированию позиции в значительной степени обуславливает создание позиций,
-                занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что рамки и место
-                обучения кадров представляет собой интересный эксперимент проверки существенных финансовых и
-                административных условий. Значимость этих проблем настолько очевидна.
-            </div>
-        </li>
-        <li class="slide">
-            <div class="client-name-link">
-                <div class="client-name text">Андрей Владимирович-4</div>
-                <a href="http://www.optzakupka.com.ua/">www.optzakupka.com.ua</a>
-            </div>
-            <div class="client-photo"></div>
-            <div class="comment-text small-text">
-                С другой стороны дальнейшее развитие различных форм деятельности обеспечивает широкому кругу
-                (специалистов) участие в формировании соответствующий условий активизации. Таким образом начало
-                повседневной работы по формированию позиции в значительной степени обуславливает создание позиций,
-                занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что рамки и место
-                обучения кадров представляет собой интересный эксперимент проверки существенных финансовых и
-                административных условий. Значимость этих проблем настолько очевидна.
-            </div>
-        </li>
-        <li class="slide">
-            <div class="client-name-link">
-                <div class="client-name text">Андрей Владимирович-5</div>
-                <a href="http://www.optzakupka.com.ua/">www.optzakupka.com.ua</a>
-            </div>
-            <div class="client-photo"></div>
-            <div class="comment-text small-text">
-                С другой стороны дальнейшее развитие различных форм деятельности обеспечивает широкому кругу
-                (специалистов) участие в формировании соответствующий условий активизации. Таким образом начало
-                повседневной работы по формированию позиции в значительной степени обуславливает создание позиций,
-                занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что рамки и место
-                обучения кадров представляет собой интересный эксперимент проверки существенных финансовых и
-                административных условий. Значимость этих проблем настолько очевидна.
-            </div>
-        </li>
-        <li class="slide">
-            <div class="client-name-link">
-                <div class="client-name text">Андрей Владимирович-6</div>
-                <a href="http://www.optzakupka.com.ua/">www.optzakupka.com.ua</a>
-            </div>
-            <div class="client-photo"></div>
-            <div class="comment-text small-text">
-                С другой стороны дальнейшее развитие различных форм деятельности обеспечивает широкому кругу
-                (специалистов) участие в формировании соответствующий условий активизации. Таким образом начало
-                повседневной работы по формированию позиции в значительной степени обуславливает создание позиций,
-                занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что рамки и место
-                обучения кадров представляет собой интересный эксперимент проверки существенных финансовых и
-                административных условий. Значимость этих проблем настолько очевидна.
-            </div>
-        </li>
-        <li class="slide">
-            <div class="client-name-link">
-                <div class="client-name text">Андрей Владимирович-7</div>
-                <a href="http://www.optzakupka.com.ua/">www.optzakupka.com.ua</a>
-            </div>
-            <div class="client-photo"></div>
-            <div class="comment-text small-text">
-                С другой стороны дальнейшее развитие различных форм деятельности обеспечивает широкому кругу
-                (специалистов) участие в формировании соответствующий условий активизации. Таким образом начало
-                повседневной работы по формированию позиции в значительной степени обуславливает создание позиций,
-                занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что рамки и место
-                обучения кадров представляет собой интересный эксперимент проверки существенных финансовых и
-                административных условий. Значимость этих проблем настолько очевидна.
-            </div>
-        </li>
-        <li class="slide">
-            <div class="client-name-link">
-                <div class="client-name text">Андрей Владимирович-8</div>
-                <a href="http://www.optzakupka.com.ua/">www.optzakupka.com.ua</a>
-            </div>
-            <div class="client-photo"></div>
-            <div class="comment-text small-text">
-                С другой стороны дальнейшее развитие различных форм деятельности обеспечивает широкому кругу
-                (специалистов) участие в формировании соответствующий условий активизации. Таким образом начало
-                повседневной работы по формированию позиции в значительной степени обуславливает создание позиций,
-                занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что рамки и место
-                обучения кадров представляет собой интересный эксперимент проверки существенных финансовых и
-                административных условий. Значимость этих проблем настолько очевидна.
-            </div>
-        </li>
-    </ul>
+        <div class="wave-line"></div>
 
-    <ul class="slider-controls">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
+        <ul class="slider">
+            <li class="slide">
+                <div class="client-name-link">
+                    <div class="client-name text">Андрей Владимирович-1</div>
+                    <a href="http://www.optzakupka.com.ua/">www.optzakupka.com.ua</a>
+                </div>
+                <div class="client-photo"></div>
+                <div class="comment-text small-text">
+                    С другой стороны дальнейшее развитие различных форм деятельности обеспечивает широкому кругу
+                    (специалистов) участие в формировании соответствующий условий активизации. Таким образом начало
+                    повседневной работы по формированию позиции в значительной степени обуславливает создание позиций,
+                    занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что рамки и место
+                    обучения кадров представляет собой интересный эксперимент проверки существенных финансовых и
+                    административных условий. Значимость этих проблем настолько очевидна.
+                </div>
+            </li>
+            <li class="slide">
+                <div class="client-name-link">
+                    <div class="client-name text">Андрей Владимирович-2</div>
+                    <a href="http://www.optzakupka.com.ua/">www.optzakupka.com.ua</a>
+                </div>
+                <div class="client-photo"></div>
+                <div class="comment-text small-text">
+                    С другой стороны дальнейшее развитие различных форм деятельности обеспечивает широкому кругу
+                    (специалистов) участие в формировании соответствующий условий активизации. Таким образом начало
+                    повседневной работы по формированию позиции в значительной степени обуславливает создание позиций,
+                    занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что рамки и место
+                    обучения кадров представляет собой интересный эксперимент проверки существенных финансовых и
+                    административных условий. Значимость этих проблем настолько очевидна.
+                </div>
+            </li>
+            <li class="slide">
+                <div class="client-name-link">
+                    <div class="client-name text">Андрей Владимирович-3</div>
+                    <a href="http://www.optzakupka.com.ua/">www.optzakupka.com.ua</a>
+                </div>
+                <div class="client-photo"></div>
+                <div class="comment-text small-text">
+                    С другой стороны дальнейшее развитие различных форм деятельности обеспечивает широкому кругу
+                    (специалистов) участие в формировании соответствующий условий активизации. Таким образом начало
+                    повседневной работы по формированию позиции в значительной степени обуславливает создание позиций,
+                    занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что рамки и место
+                    обучения кадров представляет собой интересный эксперимент проверки существенных финансовых и
+                    административных условий. Значимость этих проблем настолько очевидна.
+                </div>
+            </li>
+            <li class="slide">
+                <div class="client-name-link">
+                    <div class="client-name text">Андрей Владимирович-4</div>
+                    <a href="http://www.optzakupka.com.ua/">www.optzakupka.com.ua</a>
+                </div>
+                <div class="client-photo"></div>
+                <div class="comment-text small-text">
+                    С другой стороны дальнейшее развитие различных форм деятельности обеспечивает широкому кругу
+                    (специалистов) участие в формировании соответствующий условий активизации. Таким образом начало
+                    повседневной работы по формированию позиции в значительной степени обуславливает создание позиций,
+                    занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что рамки и место
+                    обучения кадров представляет собой интересный эксперимент проверки существенных финансовых и
+                    административных условий. Значимость этих проблем настолько очевидна.
+                </div>
+            </li>
+            <li class="slide">
+                <div class="client-name-link">
+                    <div class="client-name text">Андрей Владимирович-5</div>
+                    <a href="http://www.optzakupka.com.ua/">www.optzakupka.com.ua</a>
+                </div>
+                <div class="client-photo"></div>
+                <div class="comment-text small-text">
+                    С другой стороны дальнейшее развитие различных форм деятельности обеспечивает широкому кругу
+                    (специалистов) участие в формировании соответствующий условий активизации. Таким образом начало
+                    повседневной работы по формированию позиции в значительной степени обуславливает создание позиций,
+                    занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что рамки и место
+                    обучения кадров представляет собой интересный эксперимент проверки существенных финансовых и
+                    административных условий. Значимость этих проблем настолько очевидна.
+                </div>
+            </li>
+            <li class="slide">
+                <div class="client-name-link">
+                    <div class="client-name text">Андрей Владимирович-6</div>
+                    <a href="http://www.optzakupka.com.ua/">www.optzakupka.com.ua</a>
+                </div>
+                <div class="client-photo"></div>
+                <div class="comment-text small-text">
+                    С другой стороны дальнейшее развитие различных форм деятельности обеспечивает широкому кругу
+                    (специалистов) участие в формировании соответствующий условий активизации. Таким образом начало
+                    повседневной работы по формированию позиции в значительной степени обуславливает создание позиций,
+                    занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что рамки и место
+                    обучения кадров представляет собой интересный эксперимент проверки существенных финансовых и
+                    административных условий. Значимость этих проблем настолько очевидна.
+                </div>
+            </li>
+            <li class="slide">
+                <div class="client-name-link">
+                    <div class="client-name text">Андрей Владимирович-7</div>
+                    <a href="http://www.optzakupka.com.ua/">www.optzakupka.com.ua</a>
+                </div>
+                <div class="client-photo"></div>
+                <div class="comment-text small-text">
+                    С другой стороны дальнейшее развитие различных форм деятельности обеспечивает широкому кругу
+                    (специалистов) участие в формировании соответствующий условий активизации. Таким образом начало
+                    повседневной работы по формированию позиции в значительной степени обуславливает создание позиций,
+                    занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что рамки и место
+                    обучения кадров представляет собой интересный эксперимент проверки существенных финансовых и
+                    административных условий. Значимость этих проблем настолько очевидна.
+                </div>
+            </li>
+            <li class="slide">
+                <div class="client-name-link">
+                    <div class="client-name text">Андрей Владимирович-8</div>
+                    <a href="http://www.optzakupka.com.ua/">www.optzakupka.com.ua</a>
+                </div>
+                <div class="client-photo"></div>
+                <div class="comment-text small-text">
+                    С другой стороны дальнейшее развитие различных форм деятельности обеспечивает широкому кругу
+                    (специалистов) участие в формировании соответствующий условий активизации. Таким образом начало
+                    повседневной работы по формированию позиции в значительной степени обуславливает создание позиций,
+                    занимаемых участниками в отношении поставленных задач. Не следует, однако забывать, что рамки и место
+                    обучения кадров представляет собой интересный эксперимент проверки существенных финансовых и
+                    административных условий. Значимость этих проблем настолько очевидна.
+                </div>
+            </li>
+        </ul>
+
+        <ul class="slider-controls">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+    </div>
 
 </div>
 
 <div class="block-why-we">
 
-    <div class="sub-title">почему мы?</div>
+    <div class="content-block">
 
-    <div class="promo">
-        <div class="company-name">Magazino</div>
-        <div class="text">
+        <h4 class="sub-title">почему мы?</h4>
 
+        <div class="promo">
+            <div class="company-name">Magazino</div>
+            <div class="text">
+
+            </div>
         </div>
+
+        <div class="wave-line"></div>
+
+        <ul>
+            <li>
+                <div class="text">2009</div>
+                <div class="small-text">
+                    Год основания нашей компании на территории Украины. Мы растем вместе со своими клиентами!
+                </div>
+            </li>
+            <li>
+                <div class="text">+200</div>
+                <div class="small-text">
+                    Больше двухсот успешно запущенных интернетмагазинов по всей Украине, Росии и странах бывшего СНГ
+                </div>
+            </li>
+            <li>
+                <div class="text">$1 млн.</div>
+                <div class="small-text">
+                    Общий оборот заработанных нашими клиентами денежных средств за первое полугодие 2016 года
+                </div>
+            </li>
+            <li>
+                <div class="text">120 лет</div>
+                <div class="small-text">
+                    Суммарный опыт всех наших специалистов в области дизайна, разработки и проектирования сложных коммерческих вебинтерфейсов.
+                </div>
+            </li>
+        </ul>
+
     </div>
-
-    <div class="wave-line"></div>
-
-    <ul>
-        <li>
-            <div class="text">2009</div>
-            <div class="small-text">
-                Год основания нашей компании на территории Украины. Мы растем вместе со своими клиентами!
-            </div>
-        </li>
-        <li>
-            <div class="text">+200</div>
-            <div class="small-text">
-                Больше двухсот успешно запущенных интернетмагазинов по всей Украине, Росии и странах бывшего СНГ
-            </div>
-        </li>
-        <li>
-            <div class="text">$1 млн.</div>
-            <div class="small-text">
-                Общий оборот заработанных нашими клиентами денежных средств за первое полугодие 2016 года
-            </div>
-        </li>
-        <li>
-            <div class="text">120 лет</div>
-            <div class="small-text">
-                Суммарный опыт всех наших специалистов в области дизайна, разработки и проектирования сложных коммерческих вебинтерфейсов.
-            </div>
-        </li>
-    </ul>
 
 </div>
 
 <div class="block-portfolio">
 
-    <div class="sub-title">примеры работ</div>
+    <div class="content-block">
 
-    <div class="title">Так может выглядеть ваш интернет-магазин</div>
+        <h4 class="sub-title">примеры работ</h4>
 
-    <div class="wave-line"></div>
+        <h2 class="title">Так может выглядеть ваш интернет-магазин</h2>
 
-    <div class="slider"></div>
+        <div class="wave-line"></div>
 
-    <button class="send-order">ОФОРМИТЬ ЗАЯВКУ</button>
+        <div class="slider"></div>
+
+        <button class="send-order">ОФОРМИТЬ ЗАЯВКУ</button>
+
+    </div>
 
 </div>
 
@@ -640,8 +689,8 @@
     <div class="address-window">
         <div class="close-marker">&#10006;</div>
         <i class="fa fa-map-marker"></i>
-        <div class="sub-title">харьков</div>
-        <div class="title">ул. Данилевского, 36</div>
+        <h4 class="sub-title">харьков</h4>
+        <h2 class="title">ул. Данилевского, 36</h2>
         <div class="wave-line"></div>
     </div>
 
@@ -667,6 +716,7 @@
 
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
+<script src="js/timer.js"></script>
 <script src="js/custom-scripts.js"></script>
 </body>
 </html>
