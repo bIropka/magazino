@@ -57,7 +57,7 @@ body {
 }
 
 .content-block {
-    max-width: 1152px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 }
@@ -151,11 +151,8 @@ body {
     font-size: 36px;
     line-height: 42px;
 }
-.header .get-callback {
-    width: 26.5%;
-    position: absolute;
-    right: 0;
-    bottom: -22px;
+.get-callback {
+    width: 30%;
     font-family: "BlissPro ExtraBold", sans-serif;
     font-size: 16px;
     line-height: 44px;
@@ -170,11 +167,16 @@ body {
     -moz-box-shadow: inset 0 -1px 3px 0 rgba(0, 0, 0, 0.4);
     box-shadow: inset 0 -1px 3px 0 rgba(0, 0, 0, 0.4);
 }
-.header .get-callback:hover {
+.header .get-callback {
+    position: absolute;
+    right: 0;
+    bottom: -22px;
+}
+.get-callback:hover {
     background: #ffcc00;
     background: linear-gradient(to bottom, #ffcc00, #fffd00);
 }
-.header .get-callback:active {
+.get-callback:active {
     background: #ffcc00;
     -webkit-box-shadow: inset 2px 2px 3px 0 rgba(0, 0, 0, 0.2);
     -moz-box-shadow: inset 2px 2px 3px 0 rgba(0, 0, 0, 0.2);
@@ -273,7 +275,8 @@ body {
 .block-for-whom {
     padding: 5% 0;
 }
-.block-for-whom .smooth-line, .block-price .wave-line, .block-site-control .smooth-line {
+.block-for-whom .smooth-line, .block-price-components .smooth-line,
+.block-price .wave-line, .block-site-control .smooth-line {
     margin-left: 0;
 }
 .block-for-whom .column {
@@ -804,13 +807,13 @@ body {
     position: relative;
     width: 100%;
     height: 400px;
-    background: #ffcc00 linear-gradient(13deg, #ffffff 0, #ffffff 50%, transparent 50%, transparent 100%);
+    background: #ffcc00 linear-gradient(11deg, #ffffff 0, #ffffff 50%, transparent 50%, transparent 100%);
 }
 .block-steps .send-order {
     position: absolute;
     left: 0;
     right: 0;
-    width: 265px;
+    width: 300px;
     bottom: 170px;
     margin: auto;
 }
@@ -894,17 +897,228 @@ body {
     right: 0;
     top: -120px;
 }
+.start-quote {
+    position: absolute;
+    left: -40px;
+    top: -40px;
+    width: 80px;
+    height: 80px;
+    background: #ffffff url('../images/sprite-2.png') no-repeat left center;
+    background-size: auto 80%;
+}
+.finish-quote {
+    position: absolute;
+    right: -40px;
+    bottom: -40px;
+    width: 80px;
+    height: 80px;
+    background: #ffffff url('../images/sprite-2.png') no-repeat right center;
+    background-size: auto 80%;
+}
 
 /***** block-why-we *****/
 .block-why-we {
     background: #000000;
+    padding: 5% 0;
+}
+.block-why-we .company-name {
+    display: inline-block;
+    font-family: "BlissPro Bold", sans-serif;
+    font-size: 103px;
+    color: #ffffff;
+    line-height: 75px;
+    vertical-align: top;
+}
+.block-why-we .promo .small-text {
+    display: inline-block;
+    width: 600px;
+    margin: 10px 0 25px 20px;
+    color: #cccccc;
+}
+.block-why-we ul {
+    text-align: center;
+}
+.block-why-we ul li {
+    width: 260px;
+    margin: 0 10px;
+    text-align: left;
+    vertical-align: top;
+}
+.block-why-we ul li .text {
+    color: #ffffff;
+    font-family: "BlissPro Regular", sans-serif;
+    font-size: 80px;
+}
+.block-why-we ul li .small-text {
+    color: #ffffff;
+    width: 90%;
+    text-align: left;
+}
+.block-why-we ul li .smooth-line {
+    display: block;
+    margin: 20px 0;
+    width: 100px;
+}
+/**** block-portfolio ****/
+.block-portfolio {
+    padding: 5% 0;
+    text-align: center;
+}
+.block-portfolio .content-block {
+    position: relative;
+}
+.portfolio-slick {
+    display: block;
+    width: 600px;
+    margin: 0 auto;
+}
+.portfolio-item {
+    width: 600px;
+    padding-top: 600px;
+    margin: auto;
+}
+.portfolio-control {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #e6e6e6;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+.portfolio-control:hover {
+    border: 2px solid #ffcc00;
+}
+.left-control:active {
+    border: 2px solid #ffcc00;
+    background: #ffcc00 url('../images/sprite-arrows-black.png') no-repeat 15px center;
+    background-size: auto 50%;
+}
+.right-control:active {
+    border: 2px solid #ffcc00;
+    background: #ffcc00 url('../images/sprite-arrows-black.png') no-repeat -20px center;
+    background-size: auto 50%;
+}
+.left-control {
+    background: url('../images/sprite-arrows-yellow.png') no-repeat 15px center;
+    background-size: auto 50%;
+    left: 100px;
+}
+.right-control {
+    background: url('../images/sprite-arrows-yellow.png') no-repeat -20px center;
+    background-size: auto 50%;
+    right: 100px;
+}
+.portfolio-slick .item-1 {
+    background: url('../images/portfolio-1.png') no-repeat;
+    background-size: contain;
+}
+.portfolio-slick .item-2 {
+    background: url('../images/portfolio-2.png') no-repeat;
+    background-size: contain;
+}
+.portfolio-slick .item-3 {
+    background: url('../images/portfolio-3.png') no-repeat;
+    background-size: contain;
+}
+.portfolio-slick .item-4 {
+    background: url('../images/portfolio-4.png') no-repeat;
+    background-size: contain;
+}
+.portfolio-slick .item-5 {
+    background: url('../images/portfolio-5.png') no-repeat;
+    background-size: contain;
+}
+.portfolio-slick .slick-dots li button {
+    background: none;
+    border: 2px solid #e6e6e6;
+    height: 0;
+    width: 30px;
+    margin: 10px 5px;
+}
+.portfolio-slick .slick-dots .slick-active button {
+    border: 2px solid #ffcc00;
+}
+/**** block-on-map ****/
+.block-on-map {
+    position: relative;
+    text-align: center;
+}
+.address-window {
+    width: 450px;
+    height: 350px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+}
+.close-marker {
+    font-size: 25px;
+    color: #ffcc00;
+    margin-top: 10px;
+    margin-right: 20px;
+    text-align: right;
+    cursor: pointer;
+}
+.close-marker:active {
+    color: #990000;
+}
+.block-on-map .fa {
+    color: #ffcc00;
+    font-size: 96px;
+    margin-bottom: 15px;
+}
+.block-on-map .title {
+    font-size: 36px;
 }
 
-
-
-/**** block-portfolio ****/
-
-
-/**** block-on-map ****/
-
-
+/***** footer *****/
+.footer {
+    padding: 1.5% 0;
+    background: #000000;
+    text-align: center;
+}
+.footer-logo {
+    display: inline-block;
+    width: 288px;
+    padding-top: 61px;
+    background: url('../images/footer-logo.png') no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+    float: left;
+}
+.footer .phone-number {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+    float: right;
+    text-align: left;
+}
+.footer .phone-number .number {
+    font-family: "BlissPro Bold", sans-serif;
+    font-size: 36px;
+    line-height: 42px;
+    color: #ffffff;
+}
+.footer .phone-number .text {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "BlissPro ExtraLight", sans-serif;
+}
+.footer .phone-number a {
+    display: inline-block;
+}
+.footer .get-callback {
+    width: 25%;
+    color: #000000;
+    vertical-align: middle;
+    margin-top: 10px;
+}

@@ -33,14 +33,15 @@ $(document).ready(function () {
         etNumberBackground: "transparent"
     });
 
-    /*$('.comments-slider').slick({
-        arrows: false,
-        autoplay: false,
-        initialSlide: 0,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1
-    });*/
+    $('.portfolio-slick').slick({
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 6000,
+        arrows: true,
+        appendArrows: '.portfolio-control',
+        prevArrow: '.left-control',
+        nextArrow: '.right-control'
+    });
 
     $('.comments-slider-controls li').click(function() {
         var currentChoice = $(this).index();
@@ -73,6 +74,10 @@ $(document).ready(function () {
         }
 
         $(this).toggleClass('opened-block');
+    });
+
+    $('.close-marker').click(function() {
+        $(this).parents('.modal-window').fadeOut();
     });
 
 
