@@ -1,5 +1,21 @@
 $(document).ready(function () {
 
+    $('.block-price .cost-currency li').click(function() {
+        $('.block-price .cost-currency li').removeClass('active');
+        $(this).addClass('active');
+        $('.block-price .cost-value li').removeClass('active');
+        $('.block-price .cost-value li').eq($(this).index()).addClass('active');
+    });
+
+    $('.accordion li').click(function() {
+        if(!$(this).hasClass('active')){
+            $(this).parent().find('.active').find('.element-content').fadeOut(0);
+            $(this).siblings().removeClass('active');
+            $(this).find('.element-content').fadeIn(600);
+            $(this).addClass('active');
+        }
+    });
+
     /**** accordion ****/
     $( '.accordion' ).accordion(
 
@@ -11,20 +27,22 @@ $(document).ready(function () {
         etShowSign: 1,
         etSep: ":",
         etTextColor: "#ffffff",
-        etPaddingTB: 15,
-        etPaddingLR: 15,
+        etPaddingTB: 20,
+        etPaddingLR: 20,
         etBackground: "transparent",
-        etBorderColor: "white",
-        etShadow: " 0px 0px 0px 0px #333333",
         etLastUnit: 3,
-        etNumberSize: 48,
+        etNumberSize: 56,
         etNumberColor: "white",
         etNumberPaddingTB: 0,
-        etNumberPaddingLR: 2,
+        etNumberPaddingLR: 0,
         etNumberBackground: "transparent",
-        etNumberBorderSize: 0,
-        etNumberBorderRadius: 5,
-        etNumberBorderColor: "white"
+    });
+
+    $('.form-field').focus(function() {
+        $(this).parent().find('.fa').fadeOut(0);
+    });
+    $('.form-field').blur(function() {
+        $(this).parent().find('.fa').fadeIn(0);
     });
 
 
