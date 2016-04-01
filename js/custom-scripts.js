@@ -16,14 +16,9 @@ $(document).ready(function () {
         }
     });
 
-    /**** accordion ****/
-    $( '.accordion' ).accordion(
-
-    );
-
-    jQuery('.timer').eTimer({
+    $('.timer').eTimer({
         etType: 0,
-        etDate: "01.04.2016.0.0",
+        etDate: "14.04.2016.0.0",
         etShowSign: 1,
         etSep: ":",
         etTextColor: "#ffffff",

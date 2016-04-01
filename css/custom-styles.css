@@ -70,6 +70,7 @@ body {
     color: #b2b2b2;
     letter-spacing: 10px;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .title {
@@ -96,14 +97,14 @@ body {
 .smooth-line {
     width: 130px;
     border: 4px solid #ffcc00;
-    margin: 2% 0;
+    margin: 20px 0;
 }
 .wave-line {
     width: 130px;
     height: 23px;
     background: transparent url('../images/wave-line.png') no-repeat;
     background-size: cover;
-    margin: 2% 0;
+    margin: 20px 0;
 }
 
 /***** header ******/
@@ -602,7 +603,33 @@ body {
 /**** block-get-gift *****/
 .block-get-gift {
     text-align: center;
+    padding: 5% 0;
 }
 .block-get-gift .wave-line {
-    margin: 2% auto;
+    margin: 20px auto;
+}
+.block-get-gift ul {
+    margin-top: 7.5%;
+}
+.block-get-gift ul li {
+    width: 300px;
+    vertical-align: top;
+    margin: 30px 20px;
+}
+.block-get-gift .icon-gift {
+    width: 150px;
+    height: 130px;
+    margin: auto;
+    background: transparent url('../images/sprite-icons.png') no-repeat left;
+    background-size: cover;
+    border: 1px solid red;
+}
+.block-get-gift ul li:nth-child(2) .icon-gift {}
+.block-get-gift ul li:nth-child(3) .icon-gift {}
+.block-get-gift ul li:nth-child(4) .icon-gift {}
+.block-get-gift ul li:nth-child(5) .icon-gift {}
+.block-get-gift ul li:nth-child(6) .icon-gift {}
+.block-get-gift .smooth-line {
+    margin: 15px auto;
+    width: 70px;
 }
