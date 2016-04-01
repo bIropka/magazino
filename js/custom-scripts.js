@@ -30,14 +30,49 @@ $(document).ready(function () {
         etNumberColor: "white",
         etNumberPaddingTB: 0,
         etNumberPaddingLR: 0,
-        etNumberBackground: "transparent",
+        etNumberBackground: "transparent"
     });
 
+    /*$('.comments-slider').slick({
+        arrows: false,
+        autoplay: false,
+        initialSlide: 0,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });*/
+
+    $('.comments-slider-controls li').click(function() {
+        var currentChoice = $(this).index();
+        $('.comments-slider-controls li').removeClass('active');
+        $(this).addClass('active');
+        changeComment(currentChoice);
+    });
+
+    function changeComment(id) {
+        $('.comments-slide').css('display', 'none');
+        $('.comments-slide').eq(id).fadeIn();
+    }
+
     $('.form-field').focus(function() {
-        $(this).parent().find('.fa').fadeOut(0);
+        $(this).parent().find('.fa').css('display', 'none');
     });
     $('.form-field').blur(function() {
-        $(this).parent().find('.fa').fadeIn(0);
+        $(this).parent().find('.fa').css('display', 'block');
+    });
+
+    $('.icon-show-more').click(function(){
+        if($(this).hasClass('opened-block')) {
+            $(this).siblings('p').animate({
+                height: '250px'
+            }, 1000);
+        } else {
+            $(this).siblings('p').animate({
+                height: '100%'
+            }, 1000);
+        }
+
+        $(this).toggleClass('opened-block');
     });
 
 
