@@ -40,7 +40,18 @@ $(document).ready(function () {
         arrows: true,
         appendArrows: '.portfolio-control',
         prevArrow: '.left-control',
-        nextArrow: '.right-control'
+        nextArrow: '.right-control',
+        responsive: [
+            {
+                breakpoint: 1080,
+                settings: {
+                    arrows: false,
+                    appendArrows: '',
+                    prevArrow: '',
+                    nextArrow: ''
+                }
+            }
+        ]
     });
 
     $('.comments-slider-controls li').click(function() {

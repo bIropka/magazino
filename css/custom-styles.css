@@ -191,6 +191,7 @@ body {
 }
 .block-first .block-text {
     float: left;
+    text-align: left;
 }
 .block-first .title, .block-first .text {
     width: 550px;
@@ -312,7 +313,7 @@ body {
 .block-for-whom ul li:nth-child(4) a:active {color: #ffffff;background: #00ccff;border: 2px solid #00ccff;}
 
 .form-order {
-    width: 350px;
+    width: 345px;
     float: right;
     border: 8px solid #ffcc00;
     padding: 20px 0;
@@ -748,6 +749,7 @@ body {
     overflow: hidden;
     font-family: "BlissPro Regular", sans-serif;
     font-size: 18px;
+    line-height: 22px;
     color: #808080;
     text-align: justify;
 }
@@ -933,6 +935,10 @@ body {
     color: #ffffff;
     line-height: 75px;
     vertical-align: top;
+}
+.block-why-we .company-name:after {
+    content: '\2014';
+    margin-left: 20px;
 }
 .block-why-we .promo .small-text {
     display: inline-block;
@@ -1330,6 +1336,12 @@ body {
     .block-site-control .left-column {
         width: 35%;
     }
+    .block-price-components .right-column {
+        width: 30%;
+    }
+    .block-site-control .left-column {
+        height: 950px;
+    }
 }
 @media (max-width: 1280px) {
     * {
@@ -1344,37 +1356,93 @@ body {
         line-height: 18px;
         letter-spacing: 8px;
     }
-
     .title {
         font-size: 42px;
         line-height: 42px;
     }
-
     .text {
         font-size: 20px;
         line-height: 20px;
     }
-
     .small-text {
         font-size: 16px;
-        line-height: 16px;
+        line-height: 20px;
     }
     .header .promo-text .text, .header .phone-number .text,
-    .header .promo-text a, .header .phone-number a {
+    .header .promo-text a, .header .phone-number a, .footer .phone-number .text,
+    .footer .phone-number a {
         font-size: 16px;
     }
-    .phone-number .number {
+    .footer .phone-number {
+        width: 315px;
+        margin-top: 10px;
+    }
+    .phone-number .number, .phone-number .number span {
         font-size: 32px;
         line-height: 32px;
     }
+    .block-for-whom .column {
+        width: 600px;
+    }
+    .block-price .cost-value {
+        width: 340px;
+        margin-right: 20px;
+    }
+    .block-price .cost-value li {
+        font-size: 72px;
+        line-height: 72px;
+    }
+    .block-price .cost-currency li {
+        margin: 0;
+    }
+    .block-price .small-text {
+        width: auto;
+        margin-right: 30px;
+    }
+    .block-price .send-order, .block-price .another-rates {
+        margin-top: 20px;
+    }
+    .block-site-control .left-column {
+        height: 850px;
+    }
+    .block-site-control .right-column {
+        margin-left: 30px;
+        width: 650px;
+    }
+    .block-site-control .ask-question {
+        margin-right: 0;
+    }
+    .block-comments .small-text p {
+        line-height: 25px;
+    }
+    .block-comments ul li .client-name-link {
+        margin: 20px 0 10px 0;
+    }
+    .block-why-we .company-name {
+        font-size: 72px;
+        line-height: 60px;
+    }
+    .block-why-we ul li .text {
+        line-height: 80px;
+    }
 }
 @media (max-width: 1080px) {
+    .sub-title {
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 5px;
+    }
     .title {
         font-size: 38px;
         line-height: 38px;
     }
-    .promo-text {
-        font-size: 14px;
+    .text {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .header .promo-text .text, .footer .phone-number .text,
+    .footer .phone-number a {
+        font-size: 15px;
     }
     .phone-number, .get-callback, .promo-text {
         width: 315px;
@@ -1392,17 +1460,369 @@ body {
     .header .clearfix {
         display: none;
     }
+    .block-first .title, .block-first .text {
+        width: auto;
+    }
+    .block-first .title, .block-first .title .underlined {
+        font-size: 48px;
+        line-height: 42px;
+    }
+    .block-first .title .underlined .decor-line {
+        bottom: -25px;
+    }
+    .block-first .text {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .block-first .block-timer {
+        width: 300px;
+    }
+    .block-for-whom .column {
+        width: 400px;
+        margin: 0 auto;
+    }
+    .form-order {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .form-order .title {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .form-order .text {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .block-price .left-column {
+        background: #ffcc00 url('../images/background-2.png') no-repeat right center;
+        background-size: auto 50%;
+        height: 100%;
+    }
+    .block-price .cost-value {
+        width: 290px;
+    }
+    .block-price .cost-value li {
+        font-size: 62px;
+        line-height: 62px;
+    }
+    .block-price .cost-currency li {
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+        line-height: 40px;
+        margin-right: 10px;
+    }
+    .block-price-components .right-column, .block-site-control .left-column {
+        display: none;
+    }
+    .block-price-components .left-column, .block-site-control .right-column {
+        float: none;
+        margin: 0 auto;
+    }
+    .block-alternatives ul li {
+        margin: 25px 15px;
+    }
+    .block-steps .content-block ul li {
+        margin: 20px 10px;
+        background: #ffffff;
+        vertical-align: top;
+    }
+    .block-steps .triangle {
+        background: #ffcc00;
+        height: 120px;
+    }
+    .block-steps .send-order {
+        top: 20px;
+    }
+    .block-comments ul li .client-name-link {
+        margin: 20px auto 130px;
+        width: auto;
+    }
+    .block-comments .client-name-link .client-name, .block-comments .client-name-link a {
+        text-align: center;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .comments-slider {
+        margin: 20px auto 10px;
+    }
+    .portfolio-control {
+        display: none;
+    }
+    .block-why-we {text-align: center;}
+    .block-why-we .company-name:after {
+        display: none;
+    }
+    .block-why-we .promo .small-text {
+        display: block;
+        margin: 25px auto;
+    }
+    .block-why-we ul li {
+        margin: 20px 10px;
+    }
+    .footer {
+        text-align: center;
+    }
+    .footer-logo, .footer .phone-number {
+        float: none;
+    }
+    .footer .get-callback {
+        margin: 10px;
+        width: 280px;
+    }
 }
 
 @media (max-width: 768px) {
-    .phone-number, .get-callback, .promo-text, .header-logo {
+    .title {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .smooth-line {
+        display: inline-block;
+    }
+    .phone-number, .get-callback, .promo-text {
         margin: 10px;
-        width: 300px;
     }
     .header .vertical-line {
         display: none;
     }
+    .block-first {text-align: center}
+    .block-first .block-text, .block-first .block-timer {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+        margin-bottom: 20px;
+    }
+    .block-for-whom {
+        text-align: center;
+    }
+    .block-for-whom .column {
+        width: auto;
+        margin-bottom: 30px;
+    }
+    .block-for-whom .column {
+        display: inline-block;
+        float: none;
+    }
+    .block-price {
+        height: auto;
+    }
+    .block-price .left-column {
+        display: none;
+    }
+    .block-price .right-column {
+        width: 100%;
+        text-align: center;
+        padding: 30px 25px;
+        margin: 0 auto;
+        float: none;
+    }
+    .block-price .small-text {
+        margin-right: 0;
+    }
+    .block-price .wave-line {
+        margin: 20px auto;
+    }
+    .block-price .send-order .block-price .another-rates {
+        margin: 20px 10px;
+    }
+    .block-price-components .left-column, .block-site-control .right-column {
+        width: 460px;
+        padding: 30px 0;
+    }
+    .block-alternatives .text {
+        margin-bottom: 0;
+        height: 40px;
+    }
+    .block-alternatives .smooth-line {
+        margin: 15px auto;
+    }
+    .comments-slider-controls {
+        margin: 30px 0 40px;
+    }
+    .comments-slider-controls li {
+        margin-top: 10px;
+    }
+    .portfolio-slick {
+        width: 500px;
+    }
+    .portfolio-item {
+        width: 500px;
+        padding-top: 500px;
+    }
+    .block-why-we .promo .small-text {
+        width: auto;
+    }
+}
+@media (max-width: 560px) {
+    .block-make-order .form-order {
+        width: 300px;
+        border: 5px solid #ffcc00;
+        padding: 10px 0;
+    }
+    .block-make-order .form-order .title {
+        font-size: 28px;
+        line-height: 28px;
+    }
+    .block-make-order .form-order .sub-title {
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 3px;
+    }
+    .block-make-order .form-order .wave-line {
+        width: 70px;
+        height: 12px;
+    }
+    .block-make-order .form-order .wave-line {
+        margin: 10px auto;
+    }
+    .block-make-order .field-wrap {
+        width: 90%;
+        height: 40px;
+        margin-bottom: 15px;
+    }
+    .block-make-order .field-wrap .fa {
+        font-size: 16px;
+        left: 15px;
+        top : 12px;
+        line-height: 16px;
+    }
+    .block-make-order .field-wrap .fa-mobile {
+        font-size: 24px;
+        left: 15px;
+    }
+    .block-make-order .form-field {
+        padding-left: 5%;
+        font-size: 18px;
+    }
+    .block-make-order .form-field::-webkit-input-placeholder {font-size: 18px;}
+    .block-make-order .form-field::-moz-placeholder {font-size: 18px;}
+    .block-make-order .form-field:-moz-placeholder {font-size: 18px;}
+    .block-make-order .form-field:-ms-input-placeholder {font-size: 18px;}
+
+    .block-make-order .form-submit {
+        width: 90%;
+        height: 40px;
+        line-height: 40px;
+    }
+    .portfolio-slick {
+        width: 400px;
+    }
+    .portfolio-item {
+        width: 400px;
+        padding-top: 400px;
+    }
 }
 @media (max-width: 480px) {
-
+    .sub-title {
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 3px;
+    }
+    .title {
+        font-size: 28px;
+        line-height: 28px;
+    }
+    .phone-number, .get-callback, .promo-text {
+        width: 300px;
+        margin: 10px 0;
+    }
+    .block-first .title, .block-first .title .underlined {
+        font-size: 34px;
+        line-height: 32px;
+    }
+    .block-first .title .underlined .decor-line {
+        bottom: -25px;
+    }
+    .block-first .text {
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+    .block-first .title .underlined .decor-line {
+        bottom: -18px;
+    }
+    .block-price .right-column {padding: 30px 5px;}
+    .block-price .cost-currency {margin-top: 20px;}
+    .block-price .send-order, .block-price .another-rates {
+        margin: 20px 0 0 0;
+    }
+    .block-price-components .left-column, .block-site-control .right-column {
+        width: 100%;
+        padding: 30px 15px;
+    }
+    .accordion .element-header {
+        padding-right: 40px;
+    }
+    .block-site-control .icon-opencart {
+        margin-bottom: 0;
+    }
+    .block-get-gift ul li {
+        width: 300px;
+        margin: 20px auto;
+    }
+    .block-alternatives ul li {
+        width: 300px;
+        margin: 25px auto;
+    }
+    .block-steps .content-block ul li {
+        margin: 20px auto;
+    }
+    .block-comments .small-text p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .start-quote {
+        left: -20px;
+        top: -20px;
+        width: 40px;
+        height: 40px;
+    }
+    .finish-quote {
+        right: -20px;
+        bottom: -20px;
+        width: 40px;
+        height: 40px;
+    }
+    .portfolio-slick {
+        width: 300px;
+    }
+    .portfolio-item {
+        width: 300px;
+        padding-top: 300px;
+    }
+    .address-window {
+        width: 300px;
+        height: 250px;
+    }
+    .block-on-map .fa {
+        font-size: 48px;
+        margin-bottom: 15px;
+    }
+    .block-on-map .title {
+        font-size: 28px;
+    }
+    .block-on-map .wave-line {
+        width: 70px;
+        height: 12px;
+    }
+    .mz-form {
+        width: 300px;
+    }
+    .mz-form .answer .title, .mz-form .question .title {
+        font-size: 24px;
+        line-height: 24px;
+    }
+}
+@media (max-width: 380px) {
+    .block-first .text {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .footer .phone-number {width: 300px;}
+    .mz-form .close-marker {
+        top: -40px;
+        right: -10px;
+        margin: 0;
+    }
 }
