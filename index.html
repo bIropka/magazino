@@ -86,10 +86,10 @@
             </div>
 
             <ul>
-                <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fa fa-vk"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://vk.com" target="_blank"><i class="fa fa-vk"></i></a></li>
+                <li><a href="https://plus.google.com" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
             </ul>
 
         </div>
@@ -97,10 +97,10 @@
         <form class="form-order" action="#">
             <div class="title">Интернтет-магазин</div>
             <div class="text">всего за 14 дней!</div>
-            <label><input class="form-field" type="text" placeholder="&#8195;&#8195;Представьтесь"><i class="fa fa-user"></i></label>
-            <label><input class="form-field" type="text" placeholder="&#8195;&#8195;Моб. телефон"><i class="fa fa-mobile"></i></label>
-            <label><input class="form-field" type="text" placeholder="&#8195;&#8195;Электронная почта"><i class="fa fa-envelope"></i></label>
-            <input type="submit" value="ОТПРАВИТЬ">
+            <label class="field-wrap"><input class="form-field" type="text" placeholder="&#8195;&#8195;Представьтесь" required><i class="fa fa-user"></i></label>
+            <label class="field-wrap"><input class="form-field" type="text" placeholder="&#8195;&#8195;Моб. телефон" required><i class="fa fa-mobile"></i></label>
+            <label class="field-wrap"><input class="form-field" type="text" placeholder="&#8195;&#8195;Электронная почта" required><i class="fa fa-envelope"></i></label>
+            <input class="form-submit" type="submit" value="ОТПРАВИТЬ">
             <i class="fa fa-lock"></i>
             <div class="small-text">Ваши персональные данные под защитой</div>
             <a href="http://zakon0.rada.gov.ua/laws/show/2297-17" target="_blank">Закона Украины о персональных данных</a>
@@ -385,10 +385,10 @@
         <h4 class="sub-title">обратная связь</h4>
         <h2 class="title">Предварительный заказ сайта</h2>
         <div class="wave-line"></div>
-        <label><input class="form-field" type="text" placeholder="&#8195;&#8195;Представьтесь"><i class="fa fa-user"></i></label>
-        <label><input class="form-field" type="text" placeholder="&#8195;&#8195;Моб. телефон"><i class="fa fa-mobile"></i></label>
-        <label><input class="form-field" type="text" placeholder="&#8195;&#8195;Электронная почта"><i class="fa fa-envelope"></i></label>
-        <input type="submit" value="ОТПРАВИТЬ">
+        <label class="field-wrap"><input class="form-field" type="text" placeholder="&#8195;&#8195;Представьтесь" required><i class="fa fa-user"></i></label>
+        <label class="field-wrap"><input class="form-field" type="text" placeholder="&#8195;&#8195;Моб. телефон" required><i class="fa fa-mobile"></i></label>
+        <label class="field-wrap"><input class="form-field" type="text" placeholder="&#8195;&#8195;Электронная почта" required><i class="fa fa-envelope"></i></label>
+        <input class="form-submit" type="submit" value="ОТПРАВИТЬ">
     </form>
 
 </div>
@@ -944,13 +944,188 @@
         <div class="phone-number">
             <div class="number">+38 (063) 123-45-67</div>
             <div class="text">Бесплатно для абонентов «Lifecell»</div>
-            <a href="#">Изменить</a>
+            <div class="to-change">Изменить</div>
+            <div class="footer-hint">
+                <div class="number"><span>+38</span>063-123-45-67</div>
+                <div class="number"><span>+38</span>050-123-45-67</div>
+                <span>Ежедневно с 9:00 - 20:00, кроме воскресенья</span>
+            </div>
         </div>
 
         <div class="clearfix"></div>
 
     </div>
 
+</div>
+
+<div class="mz-window window-callback">
+    <form class="mz-form form-callback" action="#">
+
+        <div class="close-marker">&#10006;</div>
+
+        <div class="question">
+
+            <h4 class="sub-title">заказать</h4>
+
+            <h2 class="title">Обратный звонок</h2>
+
+            <div class="wave-line"></div>
+
+            <label class="field-wrap"><input class="form-field" type="text" placeholder="&#8195;&#8195;Представьтесь" required><i class="fa fa-user"></i></label>
+
+            <label class="field-wrap"><input class="form-field" type="text" placeholder="&#8195;&#8195;Номер телефона" required><i class="fa fa-mobile"></i></label>
+
+            <div class="field-wrap image-of-select">
+                <div class="form-field">Время звонка</div>
+                <i class="fa fa-clock-o"></i>
+                <div class="icon-arrow-down"></div>
+                <ul>
+                    <li>Прямо сейчас</li>
+                    <li>09:00</li>
+                    <li>12:00</li>
+                    <li>15:00</li>
+                    <li>18:00</li>
+                    <li>21:00</li>
+                </ul>
+            </div>
+
+            <label class="select-wrap">
+                <select id="select-time">
+                    <option value="Прямо сейчас" selected="selected"></option>
+                    <option value="09:00"></option>
+                    <option value="12:00"></option>
+                    <option value="15:00"></option>
+                    <option value="18:00"></option>
+                    <option value="21:00"></option>
+                </select>
+            </label>
+
+            <input class="form-submit" type="submit" value="ЖДУ ЗВОНКА!">
+
+        </div>
+
+        <div class="answer">
+
+            <h4 class="sub-title">Спасибо!</h4>
+
+            <h2 class="title">Ваш запрос отправлен!</h2>
+
+            <div class="wave-line"></div>
+
+            <div class="small-text">
+                С другой стороны дальнейшее развитие различных форм деятельности обеспечивает широкому кругу
+                (специалистов) участие в формировании соответствующий условий активизации. Таким образом начало
+            </div>
+
+            <ul>
+                <li><a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://vk.com" target="_blank"><i class="fa fa-vk"></i></a></li>
+                <li><a href="https://plus.google.com" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+
+        </div>
+
+    </form>
+</div>
+
+<div class="mz-window window-make-order">
+    <form class="mz-form form-make-order" action="#">
+
+        <div class="close-marker">&#10006;</div>
+
+        <div class="question">
+
+            <h4 class="sub-title">обратная связь</h4>
+
+            <h2 class="title">Оформление заявки</h2>
+
+            <div class="wave-line"></div>
+
+            <label class="field-wrap"><input class="form-field" type="text" placeholder="&#8195;&#8195;Представьтесь" required><i class="fa fa-user"></i></label>
+
+            <label class="field-wrap"><input class="form-field" type="text" placeholder="&#8195;&#8195;Номер телефона" required><i class="fa fa-mobile"></i></label>
+
+            <label class="field-wrap"><input class="form-field" type="text" placeholder="&#8195;&#8195;Электронная почта" required><i class="fa fa-envelope"></i></label>
+
+            <input class="form-submit" type="submit" value="ОТПРАВИТЬ">
+
+        </div>
+
+        <div class="answer">
+
+            <h4 class="sub-title">Спасибо!</h4>
+
+            <h2 class="title">Ваша заявка отправлена!</h2>
+
+            <div class="wave-line"></div>
+
+            <div class="small-text">
+                С другой стороны дальнейшее развитие различных форм деятельности обеспечивает широкому кругу
+                (специалистов) участие в формировании соответствующий условий активизации. Таким образом начало
+            </div>
+
+            <ul>
+                <li><a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://vk.com" target="_blank"><i class="fa fa-vk"></i></a></li>
+                <li><a href="https://plus.google.com" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+
+        </div>
+
+    </form>
+</div>
+
+<div class="mz-window window-discuss">
+    <form class="mz-form form-discuss" action="#">
+
+        <div class="close-marker">&#10006;</div>
+
+        <div class="question">
+
+            <h4 class="sub-title">обратная связь</h4>
+
+            <h2 class="title">Обсудить проект</h2>
+
+            <div class="wave-line"></div>
+
+            <label class="field-wrap"><input class="form-field" type="text" placeholder="&#8195;&#8195;Представьтесь" required><i class="fa fa-user"></i></label>
+
+            <label class="field-wrap"><input class="form-field" type="text" placeholder="&#8195;&#8195;Номер телефона" required><i class="fa fa-mobile"></i></label>
+
+            <label class="field-wrap textarea-wrap">
+                <textarea class="form-field" placeholder="&#8195;&#8195;Ваш комментарий" required></textarea>
+                <i class="fa fa-commenting"></i>
+            </label>
+
+            <input class="form-submit" type="submit" value="ОТПРАВИТЬ">
+
+        </div>
+
+        <div class="answer">
+
+            <h4 class="sub-title">Спасибо!</h4>
+
+            <h2 class="title">Ваш вопрос отправлен!</h2>
+
+            <div class="wave-line"></div>
+
+            <div class="small-text">
+                С другой стороны дальнейшее развитие различных форм деятельности обеспечивает широкому кругу
+                (специалистов) участие в формировании соответствующий условий активизации. Таким образом начало
+            </div>
+
+            <ul>
+                <li><a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://vk.com" target="_blank"><i class="fa fa-vk"></i></a></li>
+                <li><a href="https://plus.google.com" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+
+        </div>
+
+    </form>
 </div>
 
 <script src="js/jquery-2.1.4.min.js"></script>

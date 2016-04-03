@@ -58,8 +58,10 @@ $(document).ready(function () {
     $('.form-field').focus(function() {
         $(this).parent().find('.fa').css('display', 'none');
     });
-    $('.form-field').blur(function() {
-        $(this).parent().find('.fa').css('display', 'block');
+    $('.form-field').blur(function(){
+        if(!$(this).val()) {
+            $(this).parent().find('.fa').css('display', 'block');
+        }
     });
 
     $('.icon-show-more').click(function(){
@@ -79,6 +81,71 @@ $(document).ready(function () {
     $('.close-marker').click(function() {
         $(this).parents('.modal-window').fadeOut();
     });
+
+    $('.footer .phone-number .to-change').click(function() {
+        $('.footer-hint').fadeToggle();
+    });
+
+    /***** modal windows *****/
+
+    $('.mz-form .form-submit').click(function() {
+        $(this).parents('.mz-form').find('.question').fadeOut();
+        $(this).parents('.mz-form').find('.answer').fadeIn();
+    });
+
+    /* window-callback */
+    $('.get-callback').click(function () {
+        $('.window-callback').fadeIn();
+    });
+
+    $('.window-callback').click(function (event) {
+        $target = $(event.target);
+        if (!$target.closest($('.form-callback')).length) $('.window-callback').fadeOut();
+        if ($target.hasClass('close-marker')) $('.window-callback').fadeOut();
+    });
+
+    $('.icon-arrow-down').click(function() {
+        $('.image-of-select ul').fadeToggle();
+    });
+
+    $('.image-of-select ul li').click(function() {
+        var chosenId = $(this).index();
+        var thisOptions = $($('#select-time option'));
+        $(thisOptions).each(function(id, option) {
+            if(id == chosenId){
+                $(option).attr('selected', 'selected');
+            } else {
+                $(option).attr('selected', false);
+            }
+        });
+        $('#select-time option').eq(chosenId).attr('selected', 'selected');
+        $('.image-of-select .form-field').html($(this).html());
+        $('.image-of-select ul').fadeToggle();
+    });
+    //////////////////////
+
+    /* window-make-order */
+    $('.send-order').click(function () {
+        $('.window-make-order').fadeIn();
+    });
+    $('.window-make-order').click(function (event) {
+        $target = $(event.target);
+        if (!$target.closest($('.form-make-order')).length) $('.window-make-order').fadeOut();
+        if ($target.hasClass('close-marker')) $('.window-make-order').fadeOut();
+    });
+    //////////////////////
+
+    /* window-discuss */
+    $('.ask-question').click(function () {
+        $('.window-discuss').fadeIn();
+    });
+    $('.window-discuss').click(function (event) {
+        $target = $(event.target);
+        if (!$target.closest($('.form-discuss')).length) $('.window-discuss').fadeOut();
+        if ($target.hasClass('close-marker')) $('.window-discuss').fadeOut();
+    });
+
+    /////////////////////
 
 
 });
