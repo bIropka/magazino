@@ -9,10 +9,13 @@ $(document).ready(function () {
 
     $('.accordion li').click(function() {
         if(!$(this).hasClass('active')){
-            $(this).parent().find('.active').find('.element-content').fadeOut(0);
-            $(this).siblings().removeClass('active');
-            $(this).find('.element-content').fadeIn(600);
-            $(this).addClass('active');
+            var element =$(this);
+            $(element).parent().find('.active').find('.element-content').fadeOut(600);
+            setTimeout(function(){
+                $(element).siblings().removeClass('active');
+                $(element).find('.element-content').fadeIn(600);
+            }, 1000);
+            $(element).addClass('active');
         }
     });
 
@@ -75,14 +78,27 @@ $(document).ready(function () {
         }
     });
 
-    $('.icon-show-more').click(function(){
+    $('.block-comments .icon-show-more').click(function(){
         if($(this).hasClass('opened-block')) {
             $(this).siblings('p').animate({
-                height: '250px'
+                height: '135px'
             }, 1000);
         } else {
             $(this).siblings('p').animate({
-                height: '100%'
+                height: '300px'
+            }, 1000);
+        }
+
+        $(this).toggleClass('opened-block');
+    });
+    $('.block-alternatives .icon-show-more').click(function(){
+        if($(this).hasClass('opened-block')) {
+            $(this).siblings('p').animate({
+                height: '200px'
+            }, 1000);
+        } else {
+            $(this).siblings('p').animate({
+                height: '450px'
             }, 1000);
         }
 
