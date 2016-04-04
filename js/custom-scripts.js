@@ -112,6 +112,9 @@ $(document).ready(function () {
     $('.footer .phone-number .to-change').click(function() {
         $('.footer-hint').fadeToggle();
     });
+    $('.header .phone-number a').click(function() {
+        $('.header-hint').fadeToggle();
+    });
 
     /***** modal windows *****/
 
@@ -164,6 +167,9 @@ $(document).ready(function () {
 
     /* window-discuss */
     $('.ask-question').click(function () {
+        $('.window-discuss').fadeIn();
+    });
+    $('.header .promo-text a').click(function () {
         $('.window-discuss').fadeIn();
     });
     $('.window-discuss').click(function (event) {
