@@ -58,7 +58,25 @@
 
         <div class="block-timer">
             <div class="title">до первой прибыли:</div>
-            <div class="timer"></div>
+            <div id="timer">
+                <div class="dash days_dash">
+                    <div class="first-digit digit">1</div>
+                    <div class="digit">4</div>
+                    <div class="dash_title">дней</div>
+                </div>
+                <div class="dash-delimiter">:</div>
+                <div class="dash hours_dash">
+                    <div class="first-digit digit">0</div>
+                    <div class="digit">0</div>
+                    <div class="dash_title">часов</div>
+                </div>
+                <div class="dash-delimiter">:</div>
+                <div class="dash minutes_dash">
+                    <div class="first-digit digit">0</div>
+                    <div class="digit">0</div>
+                    <div class="dash_title">минут</div>
+                </div>
+            </div>
             <button class="to-run">запустить</button>
         </div>
 
@@ -1086,7 +1104,7 @@
 </div>
 
 <script src="js/jquery-2.1.4.min.js"></script>
-<script src="js/timer.js"></script>
+<script src="js/jquery.lwtCountdown-1.0.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/custom-scripts.js"></script>
 </body>

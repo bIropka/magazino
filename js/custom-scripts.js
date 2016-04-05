@@ -1,5 +1,21 @@
 $(document).ready(function () {
 
+    $('.block-timer .to-run').click(function() {
+        $('#timer').countDown({
+            targetOffset: {
+                'day': 		14,
+                'month': 	0,
+                'year': 	0,
+                'hour': 	0,
+                'min': 		0,
+                'sec': 		0
+            },
+            omitWeeks: true
+        });
+        $(this).attr('disabled', true);
+        $(this).css('background','#990000');
+    });
+
     $('.block-price .cost-currency li').click(function() {
         $('.block-price .cost-currency li').removeClass('active');
         $(this).addClass('active');
@@ -18,23 +34,6 @@ $(document).ready(function () {
             $(this).siblings('.accordion .active').removeClass('active');
             $(this).addClass('active');
         }
-    });
-
-    $('.timer').eTimer({
-        etType: 0,
-        etDate: "14.04.2016.0.0",
-        etShowSign: 1,
-        etSep: ":",
-        etTextColor: "#ffffff",
-        etPaddingTB: 20,
-        etPaddingLR: 20,
-        etBackground: "transparent",
-        etLastUnit: 3,
-        etNumberSize: 56,
-        etNumberColor: "white",
-        etNumberPaddingTB: 0,
-        etNumberPaddingLR: 0,
-        etNumberBackground: "transparent"
     });
 
     $('.portfolio-slick').slick({
@@ -58,15 +57,6 @@ $(document).ready(function () {
         ]
     });
 
-    /*$('.comments-slider-controls li').click(function() {
-        var currentId = $(this).index();
-        $('.comments-slider .visible-slide').slideUp();
-        $('.comments-slider .visible-slide').removeClass('.visible-slide');
-        $('.comments-slider-controls li').removeClass('active');
-        $(this).addClass('active');
-        $('.comments-slide').eq(currentId).slideDown();
-        $('.comments-slide').eq(currentId).addClass('visible-slide');
-    });*/
     $('.comments-slider').slick({
             dots: true,
             autoplay: true,
@@ -77,6 +67,13 @@ $(document).ready(function () {
             nextArrow: ''
     }
     );
+
+    $('.comments-slider').on('setPosition', function() {
+        $('.invisible-part').animate({
+            height: 'hide'
+        }, 300);
+        $('.comments-slider .icon-show-more').removeClass('opened-block');
+    });
 
     $('.form-field').focus(function() {
         $(this).parent().find('.fa').css('display', 'none');

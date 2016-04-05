@@ -275,17 +275,53 @@ body {
     text-transform: uppercase;
     margin: 20px 0 0 0;
 }
-.block-first .timer {
-    font-family: "BlissPro Regular", sans-serif;
+#timer {
     margin-bottom: 3%;
 }
-.block-first .timer .etTitle {
-    display: none;
+#timer .dash {
+    display: inline-block;
+    margin: 20px 5px;
+    position: relative;
+    width: 50px;
+    height: 80px;
 }
-.block-first .block-timer .timer .etNumber,
-.block-first .block-timer .timer .etSign {
+#timer .dash-delimiter {
+    display: inline-block;
     font-family: "BlissPro Regular", sans-serif;
+    font-size: 48px;
+    color: #ffffff;
+    vertical-align: top;
+    line-height: 48px;
+    margin-top: 20px;
 }
+#timer .digit {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    font-family: "BlissPro Regular", sans-serif;
+    font-size: 48px;
+    color: #ffffff;
+    line-height: 48px;
+}
+#timer .first-digit {
+    left: 0;
+}
+#timer .digit .top, #timer .digit .bottom {
+    font-family: "BlissPro Regular", sans-serif;
+    font-size: 48px;
+    color: #ffffff;
+    line-height: 48px;
+}
+#timer .dash_title {
+    display: block;
+    font-size: 24px;
+    font-family: "BlissPro Regular", sans-serif;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 .block-first .to-run {
     display: inline-block;
     width: 90%;
@@ -929,6 +965,9 @@ body {
     background: #ffcc00;
     color: #ffcc00;
 }
+.block-comments ul li {
+    outline: none;
+}
 .block-comments ul li .client-name-link {
     display: block;
     width: 300px;
@@ -1530,7 +1569,7 @@ body {
     }
     .phone-number, .get-callback, .promo-text {
         width: 315px;
-        float: none
+        float: none;
     }
     .header .get-callback {
         display: inline-block;
