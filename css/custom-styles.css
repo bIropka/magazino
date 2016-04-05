@@ -531,11 +531,12 @@ body {
     line-height: 54px;
 }
 .another-rates:hover {
-    border-radius: 30px;
+    background: #ffcc00;
+    color: #ffffff;
 }
 .another-rates:active {
-    border: 3px solid #ffcc00;
     background: #ffcc00;
+    color: #000000;
 }
 
 /**** block-price-components ****/
